@@ -1,5 +1,7 @@
 import React from "react";
 
-export default function SearchForm() {
+const SearchForm = () => {
   return <h1>searchform component</h1>;
 }
+
+export default SearchForm

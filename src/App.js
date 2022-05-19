@@ -4,16 +4,18 @@ import Home from "./pages/Home";
 import Error from './pages/Error'
 import SingleCocktail from "./pages/SingleCocktail";
 import About from "./pages/About";
-
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <Router>
-    <Switch>
-      <Route exact path="/"> <Home /> </Route> 
-      <Route path="/about"> <About /> </Route> 
-      <Route path="*"> <Error /> </Route> 
-    </Switch>
+      <Navbar />
+      <Switch>
+        <Route exact path="/"> <Home /> </Route> 
+        <Route path="/about"> <About /> </Route> 
+        <Route path="/cocktail/:id"> <SingleCocktail /> </Route> 
+        <Route path="*"> <Error /> </Route> 
+      </Switch>
     </Router>
   )
 }
