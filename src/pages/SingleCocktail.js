@@ -1,5 +1,7 @@
 import React from "react";
 
-export default function SingleCocktail() {
+const SingleCocktail = () => {
   return <h1>single cocktail page</h1>;
 }
+
+export default SingleCocktail
